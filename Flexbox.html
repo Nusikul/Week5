@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .flexconteiner {
+            border: 1px solid palevioletred;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 70vw;
+            height: 70vh;
+            text-align: center;
+        }
+
+        .title {
+            border: 1px solid red;
+            text-align: center;
+            Flex: grow 1px;
+            width: 100%;
+            height: 30%;
+        }
+
+        .flexp {
+            border: 1px solid rgb(35, 10, 18);
+            flex-direction: row;
+            width: 48%;
+            height: 25%;
+        }
+
+        .flexp3 {
+            border: 1px solid red;
+            flex-direction: row;
+            width: 100%;
+            height: 25%;
+        }
+
+        .aside {
+            width: 22vw;
+            height: 70vh;
+            border: 1px solid red;
+            float: right;
+            text-align: center;
+
+        }
+
+        .flexconteiner1 {
+            border: 1px solid palevioletred;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            width: 100vw;
+            height: 10vh;
+            text-align: center;
+        }
+
+        .footer {
+            width: 25vw;
+            height: 20vh;
+            text-align: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body style="color: gray;">
+    <header>
+        <h1>[Шапка страницы]</h1>
+    </header>
+    <main>
+        <aside class="aside">
+            <h2>[Боковая часть] </h2>
+        </aside>
+        <div class="flexconteiner">
+            <h2 class="title">[Основная часть]</h2>
+            <p class="flexp">[Ёще 1]</p>
+            <p class="flexp">[Ёще 2]</p>
+            <p class="flexp3">[Ёще 3]</p>
+        </div>
+    </main>
+    <footer>
+        <div class="flexconteiner1">
+            <p class="footer">[Секция футера1]</p>
+            <p class="footer">[Секция футера2]</p>
+            <p class="footer">[Секция футера3]</p>
+            <p class="footer">[Секция футера4]</p>
+    </footer>
+</body>
+
+</html>
